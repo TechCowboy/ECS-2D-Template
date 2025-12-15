@@ -1,5 +1,7 @@
-extends Node2D
+extends Control
 
 
-func _on_restart_button_pressed() -> void:
+
+
+func _on_start_button_pressed() -> void:
 	get_tree().change_scene_to_file(Globals.game_start_scene)
