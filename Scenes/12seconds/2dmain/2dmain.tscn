@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bw2n85403ll4k"]
+[gd_scene load_steps=7 format=3 uid="uid://bw2n85403ll4k"]
 
 [ext_resource type="Script" uid="uid://5ptivomvl2ld" path="res://Scenes/12seconds/2dmain/2dmain.gd" id="1_mjba8"]
+[ext_resource type="Texture2D" uid="uid://c2m1lg6eqof1u" path="res://assets/sahara-9970297.jpg" id="2_2ksn4"]
 [ext_resource type="PackedScene" uid="uid://yeicasfrtwq" path="res://Scenes/12seconds/HUD/hud.tscn" id="2_l7tyd"]
 [ext_resource type="PackedScene" uid="uid://cjw534simi2n4" path="res://Scenes/12seconds/seasaw/sea_saw.tscn" id="3_3eiue"]
 [ext_resource type="PackedScene" uid="uid://52ku7f34owj7" path="res://Scenes/12seconds/player/player.tscn" id="4_kadgc"]
@@ -8,6 +9,11 @@
 
 [node name="2Dmain" type="Node2D"]
 script = ExtResource("1_mjba8")
+
+[node name="Sahara9970297" type="Sprite2D" parent="."]
+position = Vector2(761.99994, 257)
+scale = Vector2(0.45559135, 0.3201458)
+texture = ExtResource("2_2ksn4")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
