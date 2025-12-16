@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqgrubbi763op"]
+
+[ext_resource type="Texture2D" uid="uid://6hly322tgof0" path="res://assets/myrrh.png" id="1_bffdf"]
+[ext_resource type="Script" uid="uid://bsmnst8rnqq5d" path="res://Scenes/12seconds/myrrh/myrrh.gd" id="1_gv8pv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dt1x5"]
+size = Vector2(143, 87)
+
+[node name="Myrrh" type="Node2D"]
+script = ExtResource("1_gv8pv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_bffdf")
+
+[node name="NyrrhArea2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NyrrhArea2D"]
+position = Vector2(1.5, -1.5)
+shape = SubResource("RectangleShape2D_dt1x5")
+
+[connection signal="body_entered" from="NyrrhArea2D" to="." method="_on_nyrrh_area_2d_body_entered"]

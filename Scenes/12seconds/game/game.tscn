@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bw2n85403ll4k"]
+[gd_scene load_steps=11 format=3 uid="uid://bw2n85403ll4k"]
 
 [ext_resource type="Script" uid="uid://5ptivomvl2ld" path="res://Scenes/12seconds/game/game.gd" id="1_kctxx"]
 [ext_resource type="Texture2D" uid="uid://c2m1lg6eqof1u" path="res://assets/sahara-9970297.jpg" id="2_ms6e1"]
@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://cjw534simi2n4" path="res://Scenes/12seconds/seasaw/sea_saw.tscn" id="6_wqp2l"]
 [ext_resource type="PackedScene" uid="uid://baq5gx64salpb" path="res://Scenes/12seconds/coin/coin.tscn" id="7_bwyn1"]
 [ext_resource type="PackedScene" uid="uid://rqaat4ruwhu3" path="res://Scenes/12seconds/death/death.tscn" id="8_eyi0r"]
+[ext_resource type="PackedScene" uid="uid://dqgrubbi763op" path="res://Scenes/12seconds/myrrh/myrrh.tscn" id="9_41pm4"]
+[ext_resource type="PackedScene" uid="uid://cytpx7h7lu3ku" path="res://Scenes/12seconds/frankincense/frankincense.tscn" id="10_7c106"]
 
 [node name="2Dmain" type="Node2D"]
 script = ExtResource("1_kctxx")
@@ -58,18 +60,23 @@ position = Vector2(867, 278)
 [node name="SeaSaw9" parent="." instance=ExtResource("6_wqp2l")]
 position = Vector2(1020, 222)
 
-[node name="Coin" parent="." instance=ExtResource("7_bwyn1")]
-position = Vector2(283, 273)
-
 [node name="Coin2" parent="." instance=ExtResource("7_bwyn1")]
-position = Vector2(493, 67)
-
-[node name="Coin3" parent="." instance=ExtResource("7_bwyn1")]
-position = Vector2(457, 200)
-
-[node name="Coin4" parent="." instance=ExtResource("7_bwyn1")]
-position = Vector2(695, 120)
+position = Vector2(544, 155)
 
 [node name="Death" parent="." instance=ExtResource("8_eyi0r")]
 position = Vector2(682, 1041)
 scale = Vector2(2, 2)
+
+[node name="Myrrh" parent="." instance=ExtResource("9_41pm4")]
+position = Vector2(731, 147)
+scale = Vector2(0.5, 0.5)
+
+[node name="Frankincense" parent="." instance=ExtResource("10_7c106")]
+position = Vector2(780, 315)
+scale = Vector2(0.5, 0.5)
+
+[node name="Coin" parent="." instance=ExtResource("7_bwyn1")]
+position = Vector2(149, 145)
+
+[node name="Coin3" parent="." instance=ExtResource("7_bwyn1")]
+position = Vector2(299, 280)

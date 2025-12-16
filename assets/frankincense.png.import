@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmlg8k153m0g5"
-path="res://.godot/imported/tile_grid.png-87e8e71dcf9fec5e3c70f256f1f96d85.ctex"
+uid="uid://c6ydkmpjjsmty"
+path="res://.godot/imported/frankincense.png-7800c314f7ff1db2e17bd024d974a568.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tile_grid.png"
-dest_files=["res://.godot/imported/tile_grid.png-87e8e71dcf9fec5e3c70f256f1f96d85.ctex"]
+source_file="res://assets/frankincense.png"
+dest_files=["res://.godot/imported/frankincense.png-7800c314f7ff1db2e17bd024d974a568.ctex"]
 
 [params]
 

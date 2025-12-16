@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b6awd18dx6oly"]
 
 [ext_resource type="Script" uid="uid://dkxxkhxt6hi0q" path="res://Scenes/maze/2D/2dmain/2dmain.gd" id="1_pc6kj"]
-[ext_resource type="Texture2D" uid="uid://bmlg8k153m0g5" path="res://assets/tile_grid.png" id="2_hhxw1"]
+[ext_resource type="Texture2D" uid="uid://bmlg8k153m0g5" path="res://assets/frankincense.png" id="2_hhxw1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8gbba"]
 texture = ExtResource("2_hhxw1")
