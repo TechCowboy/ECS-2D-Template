@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://babwi4romeaa4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n8f0v"]
+albedo_color = Color(0.1254902, 1, 1, 1)
+
+[node name="Wall" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1, 1, 0)
+use_collision = true
+size = Vector3(0.1, 2, 2)
+material = SubResource("StandardMaterial3D_n8f0v")

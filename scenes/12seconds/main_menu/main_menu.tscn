@@ -1,0 +1,78 @@
+[gd_scene load_steps=4 format=3 uid="uid://c34ymwyxfdewd"]
+
+[ext_resource type="Texture2D" uid="uid://ddb5o6kpwmwjc" path="res://assets/Screenshot from 2025-12-15 19-11-13.png" id="1_kiq2m"]
+[ext_resource type="Script" uid="uid://daowulqv2xflt" path="res://scenes/12seconds/main_menu/main_menu.gd" id="1_v3e63"]
+[ext_resource type="Texture2D" uid="uid://810gxoj4pih2" path="res://assets/ESRB_Everyone.svg" id="3_xnl1e"]
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource("1_v3e63")
+
+[node name="ScreenshotFrom20251215191113" type="Sprite2D" parent="."]
+position = Vector2(594.00006, 314)
+scale = Vector2(1.0725126, 1.0684713)
+texture = ExtResource("1_kiq2m")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -320.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Title" type="RichTextLabel" parent="MarginContainer/VBoxContainer"]
+clip_contents = false
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/bold_font_size = 40
+text = "STR_TITLE"
+fit_content = true
+autowrap_mode = 0
+autowrap_trim_flags = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Language" type="OptionButton" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="StartButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "STR_START"
+
+[node name="HelpButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "STR_HELP"
+
+[node name="Settings" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "STR_SETTINGS"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "STR_QUIT"
+
+[node name="ESRB" type="TextureRect" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("3_xnl1e")
+expand_mode = 3
+stretch_mode = 5
+
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/Language" to="." method="_on_language_item_selected"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HelpButton" to="." method="_on_help_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

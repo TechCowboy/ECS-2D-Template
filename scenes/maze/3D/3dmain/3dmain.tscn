@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://emptih8rgu2c"]
+
+[ext_resource type="Script" uid="uid://765n8ckwmls7" path="res://Scenes/maze/3D/3dmain/3dmain.gd" id="1_6yaq2"]
+[ext_resource type="PackedScene" uid="uid://dvqpngdx6462" path="res://Scenes/maze/3D/player.tscn" id="2_il0rg"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_il0rg"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_nrtha"]
+sky_material = SubResource("ProceduralSkyMaterial_il0rg")
+
+[sub_resource type="Environment" id="Environment_5hg5s"]
+background_mode = 2
+sky = SubResource("Sky_nrtha")
+tonemap_mode = 2
+
+[node name="3DMain" type="Node3D"]
+script = ExtResource("1_6yaq2")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_5hg5s")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="floor" type="CSGBox3D" parent="."]
+use_collision = true
+size = Vector3(100, 0.2, 100)
+
+[node name="player" parent="." instance=ExtResource("2_il0rg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 1, -45)

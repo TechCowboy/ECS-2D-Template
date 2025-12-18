@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://cojhc0wij2asn"]
+
+[ext_resource type="Script" uid="uid://bew3gh0t8xel6" path="res://scenes/12seconds/main/main.gd" id="1_vkqq8"]
+[ext_resource type="PackedScene" uid="uid://dh647rgryy67j" path="res://scenes/12seconds/scene_manager/scene_manager.tscn" id="2_73m6c"]
+[ext_resource type="PackedScene" uid="uid://dlu3dpq3dh4u5" path="res://scenes/12seconds/audio_manager/audio_manager.tscn" id="3_no8ce"]
+[ext_resource type="PackedScene" uid="uid://dpyli7iw7w0hx" path="res://scenes/12seconds/game_settings/game_settings.tscn" id="4_afys4"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_vkqq8")
+
+[node name="CurrentScene" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="SceneManager" parent="." instance=ExtResource("2_73m6c")]
+
+[node name="AudioManager" parent="." instance=ExtResource("3_no8ce")]
+
+[node name="GameSettings" parent="." instance=ExtResource("4_afys4")]

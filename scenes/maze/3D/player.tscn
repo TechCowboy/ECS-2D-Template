@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvqpngdx6462"]
+
+[ext_resource type="Script" uid="uid://cvmefgv6xh256" path="res://Scenes/maze/3D/player/player.gd" id="1_je1in"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6yaq2"]
+
+[node name="player" type="CharacterBody3D"]
+script = ExtResource("1_je1in")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_6yaq2")

@@ -1,0 +1,77 @@
+[gd_scene load_steps=10 format=3 uid="uid://bw2n85403ll4k"]
+
+[ext_resource type="Script" uid="uid://5ptivomvl2ld" path="res://scenes/12seconds/game/game.gd" id="1_kctxx"]
+[ext_resource type="Texture2D" uid="uid://c2m1lg6eqof1u" path="res://assets/sahara-9970297.jpg" id="2_ms6e1"]
+[ext_resource type="PackedScene" uid="uid://yeicasfrtwq" path="res://scenes/12seconds/hud/hud.tscn" id="4_7c106"]
+[ext_resource type="PackedScene" uid="uid://52ku7f34owj7" path="res://scenes/12seconds/player/player.tscn" id="5_a8qxr"]
+[ext_resource type="PackedScene" uid="uid://cjw534simi2n4" path="res://scenes/12seconds/seasaw/sea_saw.tscn" id="6_wqp2l"]
+[ext_resource type="PackedScene" uid="uid://baq5gx64salpb" path="res://scenes/12seconds/coin/coin.tscn" id="7_bwyn1"]
+[ext_resource type="PackedScene" uid="uid://rqaat4ruwhu3" path="res://scenes/12seconds/death/death.tscn" id="8_eyi0r"]
+[ext_resource type="PackedScene" uid="uid://dqgrubbi763op" path="res://scenes/12seconds/myrrh/myrrh.tscn" id="9_41pm4"]
+[ext_resource type="PackedScene" uid="uid://cytpx7h7lu3ku" path="res://scenes/12seconds/frankincense/frankincense.tscn" id="10_7c106"]
+
+[node name="2Dmain" type="Node2D"]
+script = ExtResource("1_kctxx")
+items_for_win = 4
+
+[node name="Sahara9970297" type="Sprite2D" parent="."]
+position = Vector2(761.99994, 257)
+scale = Vector2(0.45559135, 0.3201458)
+texture = ExtResource("2_ms6e1")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="CanvasLayer" instance=ExtResource("4_7c106")]
+
+[node name="Player" parent="." instance=ExtResource("5_a8qxr")]
+position = Vector2(434, 153)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="SeaSaw" parent="." instance=ExtResource("6_wqp2l")]
+position = Vector2(183, 175)
+
+[node name="SeaSaw2" parent="." instance=ExtResource("6_wqp2l")]
+position = Vector2(433, 253)
+
+[node name="SeaSaw3" parent="." instance=ExtResource("6_wqp2l")]
+position = Vector2(245, 265)
+
+[node name="SeaSaw4" parent="." instance=ExtResource("6_wqp2l")]
+position = Vector2(549, 185)
+
+[node name="SeaSaw5" parent="." instance=ExtResource("6_wqp2l")]
+position = Vector2(608, 260)
+
+[node name="SeaSaw6" parent="." instance=ExtResource("6_wqp2l")]
+position = Vector2(744, 181)
+
+[node name="SeaSaw7" parent="." instance=ExtResource("6_wqp2l")]
+position = Vector2(776, 351)
+
+[node name="SeaSaw8" parent="." instance=ExtResource("6_wqp2l")]
+position = Vector2(867, 278)
+
+[node name="SeaSaw9" parent="." instance=ExtResource("6_wqp2l")]
+position = Vector2(1020, 222)
+
+[node name="Coin2" parent="." instance=ExtResource("7_bwyn1")]
+position = Vector2(544, 155)
+
+[node name="Death" parent="." instance=ExtResource("8_eyi0r")]
+position = Vector2(682, 1041)
+scale = Vector2(2, 2)
+
+[node name="Myrrh" parent="." instance=ExtResource("9_41pm4")]
+position = Vector2(731, 147)
+scale = Vector2(0.5, 0.5)
+
+[node name="Frankincense" parent="." instance=ExtResource("10_7c106")]
+position = Vector2(780, 315)
+scale = Vector2(0.5, 0.5)
+
+[node name="Coin" parent="." instance=ExtResource("7_bwyn1")]
+position = Vector2(149, 145)
+
+[node name="Coin3" parent="." instance=ExtResource("7_bwyn1")]
+position = Vector2(285, 234)

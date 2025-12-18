@@ -1,0 +1,20 @@
+STRING_ID,en,fr
+STR_TITLE,12 Seconds to Bethlehem,12 secondes jusqu’à Bethléem
+STR_MAIN_MENU,Main Menu,Menu principal
+STR_LANGUAGE,English,français
+STR_SETTINGS,Settings,Paramètres
+STR_DEBUG_SETTINGS,Debug Settings,Paramètres de débogage
+STR_START,Start,Commencer
+STR_RESUME,Resume Game,Retourner au jeu
+STR_QUIT,Quit,Quitter
+STR_SOUND,Sound,Son
+STR_MASTER_VOLUME,Master Volume,Volume principal
+STR_MUSIC_VOLUME,Music Volume,Volume de la musique
+STR_SOUND_FX_VOLUME,Sound Effects,Volume des effets sonores
+STR_SPLASH_VOLUME,Splash Volume,Volume de l'écran de démarrage
+STR_CANCEL,Cancel,Annuler
+STR_SAVE,Save Settings,Enregistrer les paramètres
+STR_PREVIOUS_MENU,Previous Menu,Menu précédent
+STR_FACTORY_RESET,Factory Reset,Réinitialisation d'usine
+STR_GAME_PLAY,"This is a short Christmas exploration game where the player gathers symbolic gifts scattered around the desert on the night of Jesus’s birth. When all items are found, the player brings them to the manger.","Il s’agit d’un court jeu d’exploration de Noël dans lequel le joueur rassemble des cadeaux symboliques dispersés dans le désert la nuit de la naissance de Jésus. Lorsque tous les objets ont été trouvés, le joueur les apporte à la crèche."
+STR_HELP,How to Play,Comment jouer
