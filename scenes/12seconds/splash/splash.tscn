@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyt51meeshfkj"]
+
+[ext_resource type="Script" uid="uid://do1rnnq45c2gq" path="res://scenes/12seconds/splash/splash.gd" id="1_1bwtf"]
+[ext_resource type="Texture2D" uid="uid://cv02m1wtebmvq" path="res://assets/images/cowboy_head.png" id="2_knl0y"]
+
+[node name="Splash" type="CanvasLayer"]
+script = ExtResource("1_1bwtf")
+
+[node name="SplashTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_knl0y")
+stretch_mode = 5
+
+[connection signal="timeout" from="SplashTimer" to="." method="_on_splash_timer_timeout"]

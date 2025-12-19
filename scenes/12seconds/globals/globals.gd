@@ -14,6 +14,7 @@ signal score_signal(score_text)
 
 # Scenes
 
+const game_splash_scene			= "uid://cyt51meeshfkj"
 const game_main_menu_scene		= "uid://c34ymwyxfdewd"
 const game_start_scene 			= "uid://bw2n85403ll4k"
 const game_over_scene 			= "uid://h6x55wwner7e"
@@ -24,13 +25,16 @@ const game_credit_scene			= "uid://dwl22b5yqxexb"
 
 # Music
 
-const music_main_menu			= "uid://oa1drv52vmhn"
+const music_main_menu			= "uid://d3npg8trhgao"
 const music_gameplay  			= "uid://c25hggegspgmi"
 
 # Sound Effects
 
-const sfx_item_collected 		= "uid://dlc6nv0v60kbt"
+const sfx_item_collected 		= "uid://bdfstjg2cqtsn"
 
+# Splash screen
+
+const splash_intro				= "uid://dqluhst2ljuf4"
 const items_needed = 12
 
 var items_collected = 0

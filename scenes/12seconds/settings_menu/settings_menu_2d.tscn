@@ -1,9 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://bjgq2x8wiyyqw"]
+[gd_scene load_steps=3 format=3 uid="uid://bjgq2x8wiyyqw"]
 
 [ext_resource type="Script" uid="uid://c7i7ldjk2j2mb" path="res://scenes/12seconds/settings_menu/settings_menu_2d.gd" id="1_8ij0w"]
-[ext_resource type="AudioStream" uid="uid://oa1drv52vmhn" path="res://assets/music/christmas-background-431808-pixabay.mp3" id="2_67un7"]
-[ext_resource type="AudioStream" uid="uid://dlc6nv0v60kbt" path="res://assets/music/game-bonus-02-294436-pixabay.mp3" id="3_jgcqq"]
-[ext_resource type="AudioStream" uid="uid://dqluhst2ljuf4" path="res://assets/music/horse-neigh-390297-pixabay-com.mp3" id="4_j1v1f"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ro661"]
 
@@ -159,17 +156,14 @@ text = "STR_PREVIOUS_MENU"
 
 [node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="CenterContainer/Sounds"]
 unique_name_in_owner = true
-stream = ExtResource("2_67un7")
 bus = &"Music"
 
 [node name="SFXAudioStreamPlayer" type="AudioStreamPlayer" parent="CenterContainer/Sounds"]
 unique_name_in_owner = true
-stream = ExtResource("3_jgcqq")
 bus = &"SFX"
 
 [node name="SplashAudioStreamPlayer" type="AudioStreamPlayer" parent="CenterContainer/Sounds"]
 unique_name_in_owner = true
-stream = ExtResource("4_j1v1f")
 bus = &"Splash"
 
 [connection signal="drag_ended" from="CenterContainer/PanelContainer/MarginContainer/HBoxContainer/MarginContainer4/VBoxContainer/GridContainer/SoundMarginContainer/CenterContainer/GridContainer/MasterVolumeHSlider" to="." method="_on_master_volume_h_slider_drag_ended"]

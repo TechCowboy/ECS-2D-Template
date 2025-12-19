@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2xodxkwtwxfr"
-path="res://.godot/imported/cowboyNorm_upscale.png-fcce0934d800460fbfb58e313b9d66d4.ctex"
+uid="uid://cv02m1wtebmvq"
+path="res://.godot/imported/cowboy_head.png-b1e97336bfa38750b92db1870add78c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cowboyNorm_upscale.png"
-dest_files=["res://.godot/imported/cowboyNorm_upscale.png-fcce0934d800460fbfb58e313b9d66d4.ctex"]
+source_file="res://assets/images/cowboy_head.png"
+dest_files=["res://.godot/imported/cowboy_head.png-b1e97336bfa38750b92db1870add78c2.ctex"]
 
 [params]
 

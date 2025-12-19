@@ -2,6 +2,7 @@ class_name AudioManager extends Node2D
 
 var current_background_music:AudioStream = null
 var current_background_music_file:String = ""
+var current_sfx:AudioStream              = null
 
 var master_bus_index
 var music_bus_index
@@ -20,6 +21,7 @@ signal sfx_finished()
 var _music:  AudioStreamPlayer 	= null
 var _sfx:    AudioStreamPlayer 	= null
 var _splash: AudioStreamPlayer 	= null
+
 
 func _init() -> void:
 	master_bus_index 	= AudioServer.get_bus_index("Master")
@@ -78,8 +80,7 @@ func on_change_music(new_music):
 
 
 func on_sfx(new_sfx):
-	var current_sfx
-	
+
 	if new_sfx == "":
 		_sfx.stream_paused = true
 		_sfx.playing = false
@@ -94,7 +95,6 @@ func on_sfx(new_sfx):
 	_sfx.autoplay = true
 	
 func on_sfx_finished():
-	print("finished")
 	sfx_finished.emit()
 
 

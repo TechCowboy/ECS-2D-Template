@@ -9,8 +9,8 @@ script = ExtResource("1_aj5p1")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ai-generated-8650583_1920" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(577, 311.00003)
-scale = Vector2(0.59705895, 0.65907073)
+position = Vector2(582.41174, 312.8125)
+scale = Vector2(0.6026962, 0.66227865)
 texture = ExtResource("2_r0oly")
 
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]

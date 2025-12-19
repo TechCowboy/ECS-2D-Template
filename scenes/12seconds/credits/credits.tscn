@@ -12,281 +12,276 @@
 [node name="Credits" type="CanvasLayer"]
 script = ExtResource("1_bbg27")
 
-[node name="Panel" type="Panel" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
-layout_mode = 0
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 offset_right = 1091.0
 offset_bottom = 642.0
 
-[node name="Credits" type="Label" parent="Panel/VBoxContainer"]
+[node name="Credits" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 text = "STR_CREDITS"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 
-[node name="GridContainer" type="GridContainer" parent="Panel/VBoxContainer/HBoxContainer"]
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 columns = 4
 
-[node name="Programming" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Programming" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "STR_PROGRAMMING"
 horizontal_alignment = 2
 
-[node name="Norman Davie" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Norman Davie" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "Norman Davie"
 
-[node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 
-[node name="Label2" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 
-[node name="Music and Sound Effects" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Music and Sound Effects" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "STR_MUSIC_AND_SFX"
 horizontal_alignment = 2
 
-[node name="pixabay" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="pixabay" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "Pixabay.com"
 
-[node name="Label8" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Label8" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "christmas-background-431808"
 
-[node name="Label7" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Label7" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 
-[node name="Music and Sound Effects2" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Music and Sound Effects2" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 horizontal_alignment = 2
 
-[node name="pixabay7" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="pixabay7" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "Pixabay.com"
 
-[node name="Label9" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Label9" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "exiting-spicatos-16208"
 
-[node name="Label10" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Label10" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 
-[node name="Music and Sound Effects3" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
-layout_mode = 2
-horizontal_alignment = 2
-
-[node name="pixabay8" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
-layout_mode = 2
-text = "Pixabay.com"
-
-[node name="Label11" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
-layout_mode = 2
-text = "game-bonus-02-294436"
-
-[node name="Label12" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
-layout_mode = 2
-
-[node name="Music and Sound Effects4" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Music and Sound Effects3" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 horizontal_alignment = 2
 
-[node name="pixabay9" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="pixabay8" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "Pixabay.com"
 
-[node name="Label13" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Label11" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "ahhhh-37191"
+
+[node name="Label12" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+
+[node name="Music and Sound Effects4" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+horizontal_alignment = 2
+
+[node name="pixabay9" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Pixabay.com"
+
+[node name="Label13" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "game-over-417465"
 
-[node name="Label14" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Label14" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 
-[node name="Music and Sound Effects5" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Music and Sound Effects5" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 horizontal_alignment = 2
 
-[node name="pixabay10" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="pixabay10" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "Pixabay.com"
 
-[node name="Label15" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Label15" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "horse-neigh-390297"
 
-[node name="Label16" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Label16" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 
-[node name="Music and Sound Effects6" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Music and Sound Effects6" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 horizontal_alignment = 2
 
-[node name="pixabay11" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="pixabay11" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "Pixabay.com"
 
-[node name="Label17" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Label17" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "you-win-sfx-442128"
 
-[node name="Label18" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="Label18" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 
-[node name="background images" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="background images" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "STR_IMAGES"
 horizontal_alignment = 2
 
-[node name="pixabay2" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="pixabay2" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "
 Pixabay.com
 "
 
-[node name="christmas-5751280" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="christmas-5751280" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "christmas-5751280"
 
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 texture = ExtResource("1_h1efp")
 expand_mode = 2
 
-[node name="background images2" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="background images2" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 horizontal_alignment = 2
 
-[node name="pixabay3" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="pixabay3" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "
 Pixabay.com
 "
 
-[node name="ai-generated-8650583_1920" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="ai-generated-8650583_1920" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "ai-generated-8650583"
 
-[node name="TextureRect2" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="TextureRect2" type="TextureRect" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 texture = ExtResource("2_sb6wd")
 expand_mode = 4
 
-[node name="background images3" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="background images3" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 horizontal_alignment = 2
 
-[node name="pixabay4" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="pixabay4" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "
 Pixabay.com
 "
 
-[node name="sand-7551701_1920-pixabay" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="sand-7551701_1920-pixabay" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "sand-7551701"
 
-[node name="TextureRect3" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="TextureRect3" type="TextureRect" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 texture = ExtResource("3_1qj3e")
 expand_mode = 4
 
-[node name="background images4" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="background images4" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 horizontal_alignment = 2
 
-[node name="pixabay5" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="pixabay5" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "
 Pixabay.com
 "
 
-[node name="manger-9223630_1920-pixabay" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="manger-9223630_1920-pixabay" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "manger-9223630"
 
-[node name="TextureRect4" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="TextureRect4" type="TextureRect" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 texture = ExtResource("4_bbg27")
 expand_mode = 4
 
-[node name="background images5" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="background images5" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 horizontal_alignment = 2
 
-[node name="pixabay6" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="pixabay6" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "
 esrb.org
 "
 
-[node name="ESRB_Everyone" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="ESRB_Everyone" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 text = "ESRB_Everyone"
 
-[node name="TextureRect5" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer/GridContainer"]
+[node name="TextureRect5" type="TextureRect" parent="VBoxContainer/HBoxContainer/GridContainer"]
 layout_mode = 2
 texture = ExtResource("5_itqaa")
 expand_mode = 4
 
-[node name="GridContainer2" type="GridContainer" parent="Panel/VBoxContainer/HBoxContainer"]
+[node name="GridContainer2" type="GridContainer" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 columns = 4
 
-[node name="background images" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer2"]
+[node name="background images" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer2"]
 layout_mode = 2
 text = "STR_IMAGES"
 horizontal_alignment = 2
 
-[node name="craftpix" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer2"]
+[node name="craftpix" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer2"]
 layout_mode = 2
 text = "
 craftpix.net
 "
 
-[node name="christmas-5751280" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer2"]
+[node name="christmas-5751280" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer2"]
 layout_mode = 2
 text = "781196
 free-desert-enemy-sprite
 sheets-pixel-art"
 
-[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer/GridContainer2"]
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer/GridContainer2"]
 layout_mode = 2
 texture = ExtResource("7_emy37")
 expand_mode = 2
 
-[node name="background images2" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer2"]
+[node name="background images2" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer2"]
 layout_mode = 2
 horizontal_alignment = 2
 
-[node name="craftpix2" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer2"]
+[node name="craftpix2" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer2"]
 layout_mode = 2
 text = "
 craftpix.net
 "
 
-[node name="christmas-5751281" type="Label" parent="Panel/VBoxContainer/HBoxContainer/GridContainer2"]
+[node name="christmas-5751281" type="Label" parent="VBoxContainer/HBoxContainer/GridContainer2"]
 layout_mode = 2
 text = "987611
 free-citizen-artist
 astrologer-4-direction
 npc-character-pack"
 
-[node name="TextureRect2" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer/GridContainer2"]
+[node name="TextureRect2" type="TextureRect" parent="VBoxContainer/HBoxContainer/GridContainer2"]
 layout_mode = 2
 texture = ExtResource("8_6f6cb")
 expand_mode = 2
 
-[node name="PreviousButton" type="Button" parent="Panel/VBoxContainer"]
+[node name="PreviousButton" type="Button" parent="VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 8
 text = "STR_PREVIOUS_MENU"
 
-[connection signal="pressed" from="Panel/VBoxContainer/PreviousButton" to="." method="_on_previous_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/PreviousButton" to="." method="_on_previous_button_pressed"]

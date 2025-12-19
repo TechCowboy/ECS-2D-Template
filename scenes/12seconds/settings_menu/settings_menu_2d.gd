@@ -30,17 +30,24 @@ func _ready() -> void:
 	
 	GameSettings.read_settings()
 	
-	Globals.am.change_music.emit("")
+	Globals.am.play_music.emit("")
 	
 	set_buttons()
+	
+	var music = load(Globals.music_main_menu)
+	music_audio_stream_player.stream = music
+	var sfx = load(Globals.sfx_item_collected)
+	sfx_audio_stream_player.stream = sfx
+	var splash = load(Globals.splash_intro)
+	splash_audio_stream_player.stream = splash
 			
 
 func set_buttons() -> void:
 	
-	AudioServer.set_bus_volume_linear(master_bus_index, GameSettings.get_setting(GameSettings.SOUND_KEY_MASTER))
-	AudioServer.set_bus_volume_linear(music_bus_index, 	GameSettings.get_setting(GameSettings.SOUND_KEY_MUSIC))
-	AudioServer.set_bus_volume_linear(sfx_bus_index,	GameSettings.get_setting(GameSettings.SOUND_KEY_SFX))
-	AudioServer.set_bus_volume_linear(splash_bus_index, GameSettings.get_setting(GameSettings.SOUND_KEY_SPLASH))
+	AudioServer.set_bus_volume_linear(master_bus_index, GameSettings.get_setting(AudioManager.SOUND_KEY_MASTER))
+	AudioServer.set_bus_volume_linear(music_bus_index, 	GameSettings.get_setting(AudioManager.SOUND_KEY_MUSIC))
+	AudioServer.set_bus_volume_linear(sfx_bus_index,	GameSettings.get_setting(AudioManager.SOUND_KEY_SFX))
+	AudioServer.set_bus_volume_linear(splash_bus_index, GameSettings.get_setting(AudioManager.SOUND_KEY_SPLASH))
 
 	previous_master_volume 	= AudioServer.get_bus_volume_linear(master_bus_index)
 	previous_music_volume 	= AudioServer.get_bus_volume_linear(music_bus_index)
@@ -61,10 +68,10 @@ func _on_save_button_pressed() -> void:
 	previous_splash_volume 	= AudioServer.get_bus_volume_linear(splash_bus_index)
 	
 	
-	GameSettings.set_setting(GameSettings.SOUND_KEY_MASTER,	previous_master_volume)
-	GameSettings.set_setting(GameSettings.SOUND_KEY_MUSIC, 	previous_music_volume)
-	GameSettings.set_setting(GameSettings.SOUND_KEY_SFX, 	previous_sfx_volume)
-	GameSettings.set_setting(GameSettings.SOUND_KEY_SPLASH, previous_splash_volume)
+	GameSettings.set_setting(AudioManager.SOUND_KEY_MASTER,	previous_master_volume)
+	GameSettings.set_setting(AudioManager.SOUND_KEY_MUSIC, 	previous_music_volume)
+	GameSettings.set_setting(AudioManager.SOUND_KEY_SFX, 	previous_sfx_volume)
+	GameSettings.set_setting(AudioManager.SOUND_KEY_SPLASH, previous_splash_volume)
 	
 	GameSettings.save_settings()
 

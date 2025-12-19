@@ -10,4 +10,4 @@ func _ready() -> void:
 	
 
 	Globals.sm.set_scene_folder(%CurrentScene)
-	Globals.sm.change_scene.emit(Globals.game_main_menu_scene)
+	Globals.sm.change_scene.emit(Globals.game_splash_scene)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://xmboejl36pyl"]
 
-[ext_resource type="Texture2D" uid="uid://dxb2dkc4kuig3" path="res://assets/win.png" id="1_kjixg"]
+[ext_resource type="Texture2D" uid="uid://dxb2dkc4kuig3" path="res://assets/images/win.png" id="1_kjixg"]
 [ext_resource type="Script" uid="uid://dd4sgljfcnhn4" path="res://scenes/12seconds/help/help.gd" id="1_v5bra"]
 
 [node name="Help" type="Control"]

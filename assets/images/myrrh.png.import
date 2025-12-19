@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6hly322tgof0"
-path="res://.godot/imported/myrrh.png-7d8111710b1f230ba3e59985dac841d1.ctex"
+path="res://.godot/imported/myrrh.png-7f87011d0cb8ee3bc6df928c4fdb9246.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/myrrh.png"
-dest_files=["res://.godot/imported/myrrh.png-7d8111710b1f230ba3e59985dac841d1.ctex"]
+source_file="res://assets/images/myrrh.png"
+dest_files=["res://.godot/imported/myrrh.png-7f87011d0cb8ee3bc6df928c4fdb9246.ctex"]
 
 [params]
 

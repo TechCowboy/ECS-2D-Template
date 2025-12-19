@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vnpf84xkkkn3"
-path="res://.godot/imported/MainMenu.png-9d18dc20d17fb9a913754d0c3e730ce3.ctex"
+uid="uid://c6ydkmpjjsmty"
+path="res://.godot/imported/frankincense.png-b3311ef68132c363b9851db59ee60a14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MainMenu.png"
-dest_files=["res://.godot/imported/MainMenu.png-9d18dc20d17fb9a913754d0c3e730ce3.ctex"]
+source_file="res://assets/images/frankincense.png"
+dest_files=["res://.godot/imported/frankincense.png-b3311ef68132c363b9851db59ee60a14.ctex"]
 
 [params]
 
