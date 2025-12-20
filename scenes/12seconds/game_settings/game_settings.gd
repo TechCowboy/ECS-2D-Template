@@ -7,9 +7,6 @@ const GAME_SETTINGS_FILE:String = "user://settings.ini"
 const SOUND_SECTION 	= "Sound"
 const LANGUAGE_SECTION  = "Language"
 
-
-
-
 const LANGUAGE_KEY      = "Language"
 
 var setting_values = 	{ 	
@@ -26,16 +23,15 @@ func _ready() -> void:
 func default_settings() -> void:
 	set_setting(AudioManager.SOUND_KEY_MASTER,	1.0)
 	set_setting(AudioManager.SOUND_KEY_MUSIC, 	1.0)
-	set_setting(AudioManager.SOUND_KEY_SFX, 		1.0)
-	set_setting(AudioManager.SOUND_KEY_SPLASH,   1.0)
-	set_setting(LANGUAGE_KEY,       "en")
+	set_setting(AudioManager.SOUND_KEY_SFX, 	1.0)
+	set_setting(AudioManager.SOUND_KEY_SPLASH,	1.0)
+	set_setting(LANGUAGE_KEY,       			"en")
 	
 func read_settings() -> void:
 	default_settings()
 	if FileAccess.file_exists(GAME_SETTINGS_FILE):
 		if settings.load(GAME_SETTINGS_FILE) != OK:
 			default_settings()
-
 
 func save_settings() -> void:
 	settings.save(GAME_SETTINGS_FILE)
