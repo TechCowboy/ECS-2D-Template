@@ -43,5 +43,5 @@ const sfx_item_collected 		= "uid://bmk64c6fq6vsa"
 const splash_intro				= "uid://dqluhst2ljuf4"
 const items_needed = 12
 
-const north_star_increase_amount = -50
+const north_star_increase_amount = -100
 var items_collected = 0

@@ -19,10 +19,11 @@ items_for_win = 4
 [node name="HUD" parent="CanvasLayer" instance=ExtResource("4_7c106")]
 
 [node name="NorthStar" parent="." instance=ExtResource("3_pjh4x")]
-position = Vector2(444, 294)
-scale = Vector2(0.2, 0.2)
+position = Vector2(203, 57.000004)
+scale = Vector2(0.1, 0.1)
 
 [node name="Sands" parent="." instance=ExtResource("8_4cdag")]
+scale = Vector2(0.75, 0.75)
 
 [node name="Coins" type="Node2D" parent="."]
 
@@ -48,7 +49,14 @@ position = Vector2(936, 92)
 scale = Vector2(0.5, 0.5)
 
 [node name="Player" parent="." instance=ExtResource("5_a8qxr")]
-position = Vector2(336, 220)
+unique_name_in_owner = true
+position = Vector2(266, 161)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-103, 84)
+position = Vector2(3, 9)
+limit_left = -3200
+limit_top = -130
+limit_right = 3200
+limit_bottom = 190
+limit_smoothed = true
+position_smoothing_enabled = true

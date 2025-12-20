@@ -23,10 +23,6 @@ boot_splash/minimum_display_time=3000
 Globals="*res://scenes/12seconds/globals/globals.gd"
 GameSettings="*res://scenes/12seconds/game_settings/game_settings.tscn"
 
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/remove_all_theme_overrides/plugin.cfg")
-
 [global_group]
 
 player=""
