@@ -40,20 +40,16 @@ func on_change_scene(new_scene:String):
 			old_scene = ""
 			old_scene_instance = null
 			return
-			
-		var id = ResourceUID.text_to_id(new_scene)
-		var path = ResourceUID.get_id_path(id)
-		print("Loading scene: " + path)
-			
+						
 		var scene_instance = loaded_scene.instantiate()
 
-		#scene_instance.size = Vector2(screen_size_width, screen_size_height)
-	
 		scene.add_child(scene_instance)
 		old_scene = new_scene
 		old_scene_instance = scene_instance
 	else:
-		old_scene = ""
+
 		if old_scene_instance != null:
 			old_scene_instance.queue_free()
+			
+		old_scene = ""
 		

@@ -6,7 +6,15 @@
 [node name="GameOver" type="Node2D"]
 script = ExtResource("1_ex7w0")
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(573, 331)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="manger-9223630_1920-pixabay" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(558, 341)
+scale = Vector2(0.18241729, 0.1824173)
+texture = ExtResource("2_dueg2")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
 anchors_preset = 15
@@ -35,10 +43,5 @@ vertical_alignment = 1
 [node name="RestartButton" type="Button" parent="CanvasLayer/VBoxContainer"]
 layout_mode = 2
 text = "Restart"
-
-[node name="manger-9223630_1920-pixabay" type="Sprite2D" parent="."]
-position = Vector2(558, 341)
-scale = Vector2(0.18241729, 0.1824173)
-texture = ExtResource("2_dueg2")
 
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]

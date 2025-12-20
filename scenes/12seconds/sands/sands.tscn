@@ -10,21 +10,36 @@ position = Vector2(-549.90814, 213.99998)
 scale = Vector2(0.9521791, 1.0457872)
 texture = ExtResource("1_v0swh")
 
+[node name="sand-7551701_1920-pixabay4" type="Sprite2D" parent="."]
+position = Vector2(2718, 215)
+scale = Vector2(0.9521791, 1.0457872)
+texture = ExtResource("1_v0swh")
+
 [node name="sand-7551701_1920-pixabay2" type="Sprite2D" parent="."]
 position = Vector2(1089.4081, 214.60895)
 scale = Vector2(0.7912416, 1.0433018)
 texture = ExtResource("2_cjnnq")
 
+[node name="sand-7551701_1920-pixabay5" type="Sprite2D" parent="."]
+position = Vector2(4883.7036, 217.25)
+scale = Vector2(1.354475, 1.0377551)
+texture = ExtResource("2_cjnnq")
+
+[node name="sand-7551701_1920-pixabay3" type="Sprite2D" parent="."]
+position = Vector2(-2897.2046, 215.00002)
+scale = Vector2(1.5456207, 1.0433018)
+texture = ExtResource("2_cjnnq")
+
 [node name="Lower mid full span" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Lower mid full span"]
-polygon = PackedVector2Array(-1432, 371, -1138, 325, -880, 270, -554, 187, -334, 151, -268, 133, -205, 104, -118, 80, -39, 86, 1, 92, 165, 218, 335, 285, 426, 269, 582, 134, 631, 88, 677, 72, 781, 96, 877, 144, 1004, 169, 1353, 275, 1629, 325, 1822, 371)
+polygon = PackedVector2Array(-1436, 362, -1138, 325, -880, 270, -554, 187, -334, 151, -268, 133, -205, 104, -118, 80, -39, 86, 1, 92, 165, 218, 335, 285, 426, 269, 582, 134, 631, 88, 677, 72, 781, 96, 877, 144, 1004, 169, 1353, 275, 1629, 325, 1790, 352, 1832, 359, 2037, 335, 2385, 273, 2615, 221, 2903, 162, 2989, 147, 3108, 121, 3254, 201, 3468, 285, 3607, 328, 3610, 450, -1824, 437, -4057, 278, -3579, 90, -3360, 132, -3112, 174, -1900, 327)
 one_way_collision = true
 
 [node name="Hill mid left" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Hill mid left"]
-polygon = PackedVector2Array(-1322, 238, -1148, 175, -1065, 157, -946, 178, -850, 173, -645, 160, -726, 201, -1429, 287)
+polygon = PackedVector2Array(-1322, 238, -1148, 175, -1065, 157, -946, 178, -850, 173, -731, 167, -895, 200, -1429, 287)
 one_way_collision = true
 
 [node name="Hill top left" type="StaticBody2D" parent="."]
@@ -42,5 +57,5 @@ one_way_collision = true
 [node name="Hill top right" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Hill top right"]
-polygon = PackedVector2Array(915, 126, 807, 78, 873, 103, 923, 112, 946, 103, 983, 86, 1051, 51, 1101, 16, 1131, -6, 1189, -11, 1238, 4, 1285, 32, 1337, 58)
+polygon = PackedVector2Array(966, 112, 923, 112, 946, 103, 983, 86, 1051, 51, 1101, 16, 1131, -6, 1189, -11, 1238, 4, 1285, 32, 1337, 58)
 one_way_collision = true

@@ -24,15 +24,12 @@ func _ready() -> void:
 		TranslationServer.set_locale(languages[keys[selected]])
 			
 	language_options.selected = selected
-	print(languages[keys[selected]])
+
 	TranslationServer.set_locale(languages[keys[selected]])
 	Globals.am.play_music.emit(Globals.music_main_menu)
 
-
 func _on_start_button_pressed() -> void:
 	Globals.sm.change_scene.emit(Globals.game_start_scene)
-	#get_tree().change_scene_to_file(Globals.game_start_scene)
-
 
 func _on_language_item_selected(index: int) -> void:
 	var keys = languages.keys()
@@ -40,7 +37,6 @@ func _on_language_item_selected(index: int) -> void:
 
 func _on_settings_pressed() -> void:
 	Globals.sm.change_scene.emit(Globals.game_settings_scene)
-	#.change_scene_to_file(Globals.game_settings_scene)
 
 func _on_help_button_pressed() -> void:
 	Globals.sm.change_scene.emit(Globals.game_help_scene)

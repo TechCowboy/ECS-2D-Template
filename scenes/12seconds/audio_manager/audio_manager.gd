@@ -22,8 +22,8 @@ var _music:  AudioStreamPlayer 	= null
 var _sfx:    AudioStreamPlayer 	= null
 var _splash: AudioStreamPlayer 	= null
 
-
 func _init() -> void:
+
 	master_bus_index 	= AudioServer.get_bus_index("Master")
 	music_bus_index 	= AudioServer.get_bus_index("Music")
 	sfx_bus_index 		= AudioServer.get_bus_index("SFX")
@@ -59,6 +59,10 @@ func set_splash_volume(value):
 		
 func on_change_music(new_music):
 	
+	if _music == null:
+		print("_music AudioStreamPlayer is null!")
+		return
+		
 	if new_music == "":
 		_music.stream_paused = true
 		_music.playing = false
@@ -72,7 +76,11 @@ func on_change_music(new_music):
 	current_background_music_file = new_music
 	
 	current_background_music = load(new_music)
-
+	
+	if current_background_music == null:
+		print("current_background_music failed to load")
+		return
+		
 	_music.stream = current_background_music
 	_music.stream.loop = true
 	_music.playing = true
@@ -81,6 +89,9 @@ func on_change_music(new_music):
 
 func on_sfx(new_sfx):
 
+	if _sfx == null:
+		print("_sfx AudioStreamPlayer is null!")
+		
 	if new_sfx == "":
 		_sfx.stream_paused = true
 		_sfx.playing = false
@@ -88,6 +99,9 @@ func on_sfx(new_sfx):
 		return
 				
 	current_sfx = load(new_sfx)
+	if current_sfx == null:
+		print("current_sfx failed to load" + new_sfx)
+		return
 
 	_sfx.stream = current_sfx
 	_sfx.stream.loop = false

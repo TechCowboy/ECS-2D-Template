@@ -25,12 +25,14 @@ const game_credit_scene			= "uid://dwl22b5yqxexb"
 
 # Music
 
-const music_main_menu			= "uid://d3npg8trhgao"
+const music_main_menu			= "uid://bpjore1mmj76b"
 const music_gameplay  			= "uid://c25hggegspgmi"
+const music_gamelost			= "uid://cwj2r0w0qsogp"
+const music_gamewon				= "uid://b67p5cydvaa7w"
 
 # Sound Effects
 
-const sfx_item_collected 		= "uid://bdfstjg2cqtsn"
+const sfx_item_collected 		= "uid://bmk64c6fq6vsa"
 
 # Splash screen
 

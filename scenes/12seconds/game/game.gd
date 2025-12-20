@@ -4,6 +4,8 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	Globals.items_collected = 0
+	
 	Globals.game_over_signal.connect(on_game_over)
 	Globals.items_collected_signal.connect(on_item_collected)
 	Globals.am.play_music.emit(Globals.music_gameplay)
@@ -12,9 +14,9 @@ func _ready() -> void:
 func on_game_over() -> void:
 	
 	if Globals.items_collected >= items_for_win:
-		get_tree().change_scene_to_file(Globals.game_win_scene)
+		Globals.sm.change_scene.emit(Globals.game_win_scene)
 	else:
-		get_tree().change_scene_to_file(Globals.game_over_scene)
+		Globals.sm.change_scene.emit(Globals.game_over_scene)
 	
 	
 func on_item_collected(value):
